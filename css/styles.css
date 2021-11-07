@@ -20,13 +20,13 @@
 .section{
   padding-top: 94px;
   padding-bottom: 94px;
-  
 }
 .link {
   text-decoration: none;
 }
 .list {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
@@ -63,6 +63,7 @@ body {
 .nav{
   display: flex;
   align-items: center;
+  min-height: 80px;
   
 }
 /* <!-- ссылки в шапке сайта  --> */
@@ -186,7 +187,17 @@ body {
 .btn.hero:hover {
   background-color: var(--hero-btn-accent-color);
 }
-/****** Наши преимущества  ******/
+/****** -----------Наши преимущества --------------- ******/
+.features{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.features .item:not(:last-child){
+  margin-right: 30px;
+}
+
 .fake-title{
   position:absolute;
   width: 1px;
@@ -220,8 +231,18 @@ body {
 }
 
 /***** Чем мы занимаемся *****/
+.foto{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.foto .item:not(:last-child){
+  margin-right: 30px;
+}
 .title {
   margin: 0 0 50px 0;
+  text-align: center;
 
   color: #212121;
   font-weight: 700;
@@ -231,7 +252,17 @@ body {
 }
 
 /***** Наша команда фото *****/
-
+.team-carts{
+  background-color:#F5F4FA ;
+  
+}
+.carts{
+  display: flex;
+text-align: center;
+}
+.carts .item:not(:last-child){
+  margin-right: 30px;
+}
 .title-carts {
   margin: 0 0 10px 0;
 
